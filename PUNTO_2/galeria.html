@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes Interactiva</title>
+    <link rel="stylesheet" href="galeria.css">
+</head>
+<body>
+    <div class="filter-buttons">
+        <button data-category="all">Todo</button>
+        <button data-category="nature">Naturaleza</button>
+        <button data-category="city">Ciudad</button>
+        <button data-category="animals">Animales</button>
+    </div>
+
+    <div class="gallery">
+        <div class="gallery-item" data-category="nature">
+            <img src="https://w7.pngwing.com/pngs/540/48/png-transparent-green-tree-illustration-natural-resource-conservation-nature-natural-environment-nature-essay-grass-natural-science-thumbnail.png" alt="Naturaleza 1" class="thumbnail">
+        </div>
+        <div class="gallery-item" data-category="city">
+            <img src="https://e7.pngegg.com/pngimages/199/382/png-clipart-cartoon-city-city-building-trees-thumbnail.png" alt="Ciudad 1" class="thumbnail">
+        </div>
+        <div class="gallery-item" data-category="animals">
+            <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA5L3JtNjkyLW51bm55LTAwMS1lbGVtZW50Z3JvdXAucG5n.png" alt="Animales 1" class="thumbnail">
+        </div>
+        <!-- Agregar más imágenes según sea necesario -->
+    </div>
+
+    <div class="modal" id="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+
+    <script src="galeria.js"></script>
+</body>
+</html>
